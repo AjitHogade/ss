@@ -1,0 +1,21 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{orders.name}}" hide-tab-bar>
+  <ion-content class="">
+  <div style="height:30%;background:black;" >
+    
+        <img ng-src="{{orders.face}}" width="200" style="margin-left:25%">
+
+  </div>
+    <div class="button-bar">
+  <a class="button  icon-left ion-android-done button-balanced">Accept</a>
+  <a class="button  icon-left ion-android-close button-assertive  ">Cancel</a>
+  <a class="button  icon-left ion-asterisk button-energized ">Hold</a>
+</div>
+   
+  </ion-content>
+</ion-view>

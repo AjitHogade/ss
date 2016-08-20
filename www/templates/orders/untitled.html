@@ -1,0 +1,38 @@
+<ion-view view-title="Orders"  >
+  <ion-content>
+<ion-spinner icon="spiral" class="loader"></ion-spinner>
+
+    <ion-list>
+      <ion-item  ng-repeat="order in orders" type="item-text-wrap" >
+      <a href="#/tab/orders/{{order.id}}" class="animated slideInRight">
+      <div class="card animated fadeIn" >
+  <div class="item item-divider  item-icon-right">1st August 2016       <i class="icon ion-chevron-right icon-accessory"></i>
+
+  </div>
+       
+
+             <div class="list list-inset">
+
+    <div class="item">
+        <b> Client Name - </b> {{order.id}}<br />
+    </div>
+  <div class="item">
+        <b> Brand - </b> {{order.id}}<br />
+    </div>
+      <div class="item">
+        <b> Product Name- </b> {{order.id}}<br />
+    </div>
+     <div class="item">
+        <b> Style Code - </b> {{order.id}}<br />
+    </div>
+     <div class="item">
+        <b> Quantity - </b> {{order.qty}}<br />
+    </div>
+    </div>
+</a>
+      </ion-item>
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>
